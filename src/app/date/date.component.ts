@@ -26,10 +26,10 @@ export class DateComponent implements OnInit {
   ngOnInit(): void {
     this.user = {
       name : this.user1.name,
-      title: 'Software developer',
-      address: 'kendy ,NY',
-      phone: ['9968930964','9968893047']
-    }
+      title: this.user1.designation,
+      address: this.user1.address,
+      phone: this.user1.phone
+    };
   }
 
 }
