@@ -1,8 +1,8 @@
-<div>
-    <h1>{{user.name}}</h1>
-    <h3>{{user.title}}</h3>
-    <p>{{user.address}}</p>
-    <div *ngIf = "user.phone.length > 0">
+<div class="date-card">
+    <h1 class = "name">{{user.name}}</h1>
+    <h3 class = "title">{{user.title}}</h3>
+    <p class = "address">{{user.address}}</p>
+    <div class = "phone" *ngIf = "user.phone.length > 0">
         <p>Phone:</p>
         <p *ngFor="let item of user.phone">{{item}}</p>
     </div>
