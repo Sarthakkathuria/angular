@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 //this is typescript import 
 import { ViewModule } from './view/view.module';
 import { TestService } from './test.service';
+//http client module
+import {HttpClientModule} from '@angular/common/http'
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { TestService } from './test.service';
     BrowserModule,
     // for two way data binding
     FormsModule,
+    //for http rest calls
+    HttpClientModule,
     //using multiple modules
     //this is angular import to use different class from different view or comonent
     ViewModule
