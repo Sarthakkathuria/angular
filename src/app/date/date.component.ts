@@ -9,6 +9,7 @@ export class DateComponent implements OnInit {
 
   // dateM: string = 'ss';
   user:any;
+  isCollapsed:boolean = true;
   // @Input('name') userName:string="";
 
   @Input('user') user1!: User;
@@ -23,6 +24,9 @@ export class DateComponent implements OnInit {
     // }, 1000);
   
 }
+  toggle(){
+    this.isCollapsed = !this.isCollapsed;
+  }
   ngOnInit(): void {
     this.user = {
       name : this.user1.name,

@@ -11,6 +11,9 @@ export class AppComponent {
   // to pass the opject we have to create object in typescript file 
   //and then pass it to date  component
   user: User; 
+  // we are using for two way data binding using ngModel
+  inputText:string = "initial value";
+  
   constructor(){
     this.user = new User();
     this.user.name = "Sarthak Kathuria";
