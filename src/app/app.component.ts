@@ -21,4 +21,7 @@ export class AppComponent {
     this.user.address = "New York";
     this.user.phone = ['9968740258' , '996832575'];
   }
+
+  //calling service in app.component way to do that is by using dependency injection
+  
 }
